@@ -5,6 +5,7 @@ module.exports = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
+    "./node_modules/@tremor/**/*.{js,ts,jsx,tsx}", // Tremor module
   ],
   theme: {
     container: {
@@ -68,12 +69,12 @@ module.exports = {
           "0%": { transform: "translateY(-30px) scale(0.2)" },
           "100%": { transform: "transform: translateY(0px) scale(1)" },
         },
-        "flip": {
+        flip: {
           to: {
             transform: "rotate(360deg)",
           },
         },
-        "rotate": {
+        rotate: {
           to: {
             transform: "rotate(90deg)",
           },
@@ -82,7 +83,7 @@ module.exports = {
           "0%": { transform: "rotate(0deg) scale(10)" },
           "100%": { transform: "rotate(-360deg) scale(10)" },
         },
-        "shimmer": {
+        shimmer: {
           from: {
             backgroundPosition: "0 0",
           },
@@ -95,7 +96,7 @@ module.exports = {
             "offset-distance": "100%",
           },
         },
-        "marquee": {
+        marquee: {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(calc(-100% - var(--gap)))" },
         },
@@ -104,12 +105,12 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "automation-zoom-in": "automation-zoom-in 0.5s",
-        "flip": "flip 6s infinite steps(2, end)",
-        "rotate": "rotate 3s linear infinite both",
+        flip: "flip 6s infinite steps(2, end)",
+        rotate: "rotate 3s linear infinite both",
         "rotate-new": "rotate-new 20s linear infinite",
-        "shimmer": "shimmer 2s linear infinite",
+        shimmer: "shimmer 2s linear infinite",
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
-        "marquee": "marquee var(--duration) linear infinite",
+        marquee: "marquee var(--duration) linear infinite",
       },
     },
   },
